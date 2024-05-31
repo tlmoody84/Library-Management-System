@@ -22,11 +22,6 @@ class Book {
     }
 }
 
-returnBook();{
-    this.availableCopies++;
-    console.log(`"${this.title}" returned successfully.`);
-   }
-
    class Library {
     constructor(name){
         this.name = name;
@@ -36,6 +31,10 @@ returnBook();{
     addBook(book) {
         this.books = this.books.filter((book) => book.isbn !== isbn);
     }
+
+    removeBook(isbn) {
+        this.books = this.books.filter((book) => book.isbn !== isbn);
+      }
 
     listAllBooks() {
         console.log(`** ${this.name} Book List **`);
