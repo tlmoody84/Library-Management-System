@@ -22,7 +22,7 @@ class Book {
     }
 }
 
-returnBook(){
+returnBook();{
     this.availableCopies++;
     console.log(`"${this.title}" returned successfully.`);
    }
