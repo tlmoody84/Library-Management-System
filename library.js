@@ -16,4 +16,10 @@ class Book {
         }
     }
 
+    returnBook(){
+        this.availableCopies++;
+        console.log(`"${this.title}" returned successfully.`);
+    }
 }
+
+
